@@ -89,19 +89,18 @@
                       <li class="active">
                         <a href="index.html">Accueil</a>
                       </li>
-                      <li><a href="about-us.html">À propos de nous</a></li>
+                      <li><a href="#aboutus">À propos de nous</a></li>
+                      <li><a href="#devis">Obtenir un devis</a></li>
                     </ul>
                   </nav>
                 </div>
 
                 <div class="header-btn">
                   <a
-                    href="#"
+                    href="https://wa.me/+212690902700?text=salut, je vous contacte depuis votre site web, pouvez-vous fournir plus d'informations ?"
                     class="btn"
-                    data-toggle="modal"
-                    data-target="#exampleModalLong"
                     ><img
-                      src="img/icon/calculator-symbols.png"
+                      src="img/icon/calculator-symbols02.png"
                       alt="icon"
                     />Contactez-nous</a
                   >
@@ -113,292 +112,6 @@
             </div>
           </div>
           <!-- Modal Search -->
-          <div
-            class="modal fade"
-            id="search-modal"
-            tabindex="-1"
-            role="dialog"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <form>
-                  <input type="text" placeholder="Search here..." />
-                  <button><i class="fa fa-search"></i></button>
-                </form>
-              </div>
-            </div>
-          </div>
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="exampleModalLong"
-            tabindex="-1"
-            role="dialog"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog" role="document">
-              <div class="modal-content fare-rate-modal">
-                <ul class="nav nav-tabs setup-panel">
-                  <li class="nav-item single-steps">
-                    <a class="nav-link btn-amber" href="#step-1"
-                      >Select Your Destination</a
-                    >
-                  </li>
-                  <li class="nav-item single-steps">
-                    <a class="nav-link btn-blue-grey" href="#step-2"
-                      >ITEMS TO BE SHIPPED</a
-                    >
-                  </li>
-                  <li class="nav-item single-steps">
-                    <a class="nav-link btn-blue-grey" href="#step-3"
-                      >tracking information</a
-                    >
-                  </li>
-                </ul>
-                <form action="#" method="post">
-                  <div class="single-setup" id="step-1">
-                    <div class="fare-rate-tab-content">
-                      <div class="modal-shipping-info">
-                        <ul>
-                          <li>
-                            <div class="shipping-step-count">
-                              <h5>A</h5>
-                            </div>
-                            <div class="shipping-address-form">
-                              <div class="shipping-country-box form-group">
-                                <label for="from-country">from country</label>
-                                <input
-                                  type="text"
-                                  required="required"
-                                  id="from-country"
-                                  placeholder="Select Your Destination"
-                                />
-                              </div>
-                              <div class="shipping-address-box form-group">
-                                <label for="from-country-location"
-                                  >add your location</label
-                                >
-                                <input
-                                  type="text"
-                                  required="required"
-                                  id="from-country-location"
-                                  placeholder="Select Your Destination"
-                                />
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="shipping-step-count">
-                              <h5>B</h5>
-                            </div>
-                            <div class="shipping-address-form">
-                              <div class="shipping-country-box form-group">
-                                <label for="to-country">TO country</label>
-                                <input
-                                  type="text"
-                                  required="required"
-                                  id="to-country"
-                                  placeholder="Select Your Destination"
-                                />
-                              </div>
-                              <div class="shipping-address-box form-group">
-                                <label for="to-country-location"
-                                  >add your location</label
-                                >
-                                <input
-                                  type="text"
-                                  required="required"
-                                  id="to-country-location"
-                                  placeholder="Select Your Destination"
-                                />
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="modal-shipping-more-list">
-                        <ul>
-                          <li>
-                            <a href="#"
-                              ><i class="flaticon-credit-card"></i> Don't have
-                              an account? No problem Pay by credit card or
-                              cash.</a
-                            >
-                          </li>
-                          <li>
-                            <a href="#"
-                              ><i class="flaticon-sings"></i> Get a quick quote
-                              and start shipping</a
-                            >
-                          </li>
-                          <li>
-                            <a href="#"
-                              ><i class="flaticon-track"></i> Consult your
-                              packaging and delivery options</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                      <button
-                        class="btn f-right nextBtn-2 btn-success"
-                        type="button"
-                      >
-                        one more step
-                      </button>
-                    </div>
-                  </div>
-                  <div class="single-setup" id="step-2">
-                    <div class="fare-rate-tab-content">
-                      <div class="modal-shipping-details">
-                        <div class="modal-shipping-title">
-                          <h2>items <span>details</span></h2>
-                          <h2 class="f-right">
-                            total cost : <span>$ 19.00</span>
-                          </h2>
-                        </div>
-                        <div class="shipping-details-info">
-                          <div class="single-shipping-details-box">
-                            <label for="packaging-size">packaging size</label>
-                            <select class="custom-select" id="packaging-size">
-                              <option selected="">
-                                Standart Size ( 42” x 36” )
-                              </option>
-                              <option>Standart Size ( 82” x 86” )</option>
-                              <option>Standart Size ( 102” x 165” )</option>
-                              <option>Standart Size ( 110” x 205” )</option>
-                              <option>Standart Size ( 120” x 250” )</option>
-                            </select>
-                          </div>
-                          <div class="single-shipping-details-box shipping-qty">
-                            <label for="QTY-number">QTY</label>
-                            <input
-                              type="number"
-                              value="1"
-                              id="QTY-number"
-                              required="required"
-                            />
-                          </div>
-                          <div
-                            class="single-shipping-details-box shipping-weight"
-                          >
-                            <label for="packaging-weight">TOTAL WEIGHT</label>
-                            <select class="custom-select" id="packaging-weight">
-                              <option selected="">KG</option>
-                              <option>20KG</option>
-                              <option>30KG</option>
-                              <option>50KG</option>
-                              <option>80KG</option>
-                              <option>100KG</option>
-                            </select>
-                          </div>
-                          <div
-                            class="single-shipping-details-box shipping-transport"
-                          >
-                            <label for="cargo-transport">cargo transport</label>
-                            <select class="custom-select" id="cargo-transport">
-                              <option selected="">IN</option>
-                              <option>1500in</option>
-                              <option>2000in</option>
-                              <option>2500in</option>
-                              <option>3000in</option>
-                              <option>3500in</option>
-                              <option>4000in</option>
-                            </select>
-                          </div>
-                          <div
-                            class="single-shipping-details-box shipping-product"
-                          >
-                            <label for="product-category"
-                              >product category</label
-                            >
-                            <select class="custom-select" id="product-category">
-                              <option selected="">Glass Product</option>
-                              <option>Glass Product</option>
-                              <option>Glass Product</option>
-                              <option>Glass Product</option>
-                              <option>Glass Product</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                          <input
-                            type="checkbox"
-                            required="required"
-                            class="custom-control-input"
-                            id="customControlInline"
-                          />
-                          <label
-                            class="custom-control-label"
-                            for="customControlInline"
-                            >Logistics is generally the detailed organization
-                            and implementation of a complex operation. In a
-                            general business sense, logistics is the management
-                            of the flow of things between the point of origin
-                            and the point</label
-                          >
-                        </div>
-                      </div>
-                      <button
-                        class="btn f-left prevBtn-2 btn-success"
-                        type="button"
-                      >
-                        Previous
-                      </button>
-                      <button
-                        class="btn f-right nextBtn-2 btn-success"
-                        type="button"
-                      >
-                        <span>$19.00</span> Booking
-                      </button>
-                    </div>
-                  </div>
-                  <div class="single-setup" id="step-3">
-                    <div class="fare-rate-tab-content">
-                      <div class="modal-shipping-details">
-                        <div class="modal-shipping-title">
-                          <h2>tracking <span>information</span></h2>
-                        </div>
-                        <div class="f-left pr-20">
-                          <div
-                            class="shipping-details-info shipping-tracking-info"
-                          >
-                            <div class="modal-tracking-info">
-                              <label for="invoice-id">invoice Id</label>
-                              <input
-                                type="text"
-                                id="invoice-id"
-                                placeholder="Enter Your Id"
-                              />
-                            </div>
-                            <div class="modal-tracking-info">
-                              <label>Search invoice</label>
-                              <button class="btn nextBtn-2 btn-success">
-                                find your product
-                              </button>
-                            </div>
-                          </div>
-                          <div class="tracking-quots-board">
-                            <label>your happiness quotes</label>
-                            <div class="tracking-quots-board-info">
-                              <img src="img/bg/board_bg.jpg" alt="img" />
-                              <h5>
-                                On Board Your Products. Now Product is Malaysia
-                                Ocean
-                              </h5>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="tracking-modal-map">
-                          <div id="contact-map"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </header>
@@ -414,11 +127,11 @@
               <div class="col-12">
                 <div class="s-slider-content text-center">
                   <h6>
-                    <a href="#"
+                    <a href="#devis"
                       ><i class="fas fa-file-invoice" style="padding: 7px"></i
                       >OBTENIR UN DEVIS</a
                     >
-                    <a href="#"
+                    <a href="tel:+212690902700"
                       ><i
                         class="fas fa-phone fa-flip-horizontal"
                         style="padding: 7px"
@@ -434,7 +147,7 @@
               </div>
             </div>
           </div>
-          <a href="#category-section" class="icon-scroll">
+          <a href="#aboutus" class="icon-scroll">
             <span></span>
             <span></span>
             <span></span>
@@ -448,9 +161,6 @@
           <div class="slide-golve-car">
             <img src="img/slider/car.png" alt="" />
           </div>
-          <div class="slider-plane">
-            <img src="img/slider/plane.png" alt="" />
-          </div>
         </div>
       </section>
       <!-- slider-area-end -->
@@ -458,87 +168,11 @@
       <!-- category-area-end -->
 
       <!-- services-area -->
-      <section class="services-area delivery-bg pt-110 pb-90">
-        <!-- <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-xl-7 col-lg-10">
-              <div class="s-section-title text-center mb-60">
-                <h2>Cargo Delivery</h2>
-                <p>
-                  Express delivery is an innovative service is effective
-                  logistics solution for the delivery of small cargo. This
-                  service is useful for companies various.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="services-wrapper">
-            <div class="row">
-              <div class="col-lg-4 col-md-6">
-                <div class="single-services mb-30">
-                  <div class="services-thumb">
-                    <a href="#"
-                      ><img src="img/images/services_img01.jpg" alt="img"
-                    /></a>
-                  </div>
-                  <div class="services-content">
-                    <div class="services-icon">
-                      <i class="flaticon-shipping-and-delivery"></i>
-                    </div>
-                    <h3><a href="#">More Control, for Free</a></h3>
-                    <span>Delivery Service</span>
-                    <p>
-                      Express delivery is an innovativ service is effective
-                      logistics solutio for delivery of small cargo service.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="single-services mb-30">
-                  <div class="services-thumb">
-                    <a href="#"
-                      ><img src="img/images/services_img02.jpg" alt="img"
-                    /></a>
-                  </div>
-                  <div class="services-content">
-                    <div class="services-icon">
-                      <i class="flaticon-shipping"></i>
-                    </div>
-                    <h3><a href="#">Expand with E-Commerce</a></h3>
-                    <span>Delivery Service</span>
-                    <p>
-                      Express delivery is an innovativ service is effective
-                      logistics solutio for delivery of small cargo service.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="single-services mb-30">
-                  <div class="services-thumb">
-                    <a href="#"
-                      ><img src="img/images/services_img03.jpg" alt="img"
-                    /></a>
-                  </div>
-                  <div class="services-content">
-                    <div class="services-icon">
-                      <i class="flaticon-location"></i>
-                    </div>
-                    <h3><a href="#">More Than Anywhere Shipping</a></h3>
-                    <span>Delivery Service</span>
-                    <p>
-                      Express delivery is an innovativ service is effective
-                      logistics solutio for delivery of small cargo service.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
-      </section>
-      <section class="international-services position-relative pb-120 fix">
+      <section class="services-area delivery-bg pt-110 pb-90"></section>
+      <section
+        class="international-services position-relative pb-120 fix"
+        id="aboutus"
+      >
         <div class="container">
           <div class="services-wrapper">
             <div class="row align-items-center">
@@ -562,7 +196,11 @@
                     commercial, et opérationnel sont disponibles 24/7 au +212
                     690 902 700.
                   </p>
-                  <a href="#" class="btn">Contactez-nous</a>
+                  <a
+                    href="https://wa.me/+212690902700?text=salut, je vous contacte depuis votre site web, pouvez-vous fournir plus d'informations ?"
+                    class="btn"
+                    >Contactez-nous</a
+                  >
                 </div>
               </div>
             </div>
@@ -701,457 +339,61 @@
           </div>
         </div>
       </section>
-      <!-- delivery-services-end -->
-
-      <!-- fact-area -->
-      <section class="fact-area pt-120 pb-65">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-3 col-lg-4 col-sm-6">
-              <div class="single-fact mb-50">
-                <div class="fact-icon mb-25">
-                  <i class="flaticon-package"></i>
-                </div>
-                <div class="fact-content">
-                  <h4><span class="count">3,560</span> km</h4>
-                  <h6>Package Delivered</h6>
-                  <p>
-                    Express delivery is an innaiv service effective logistics
-                    solution
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-sm-6">
-              <div class="single-fact mb-50">
-                <div class="fact-icon mb-25">
-                  <i class="flaticon-placeholder"></i>
-                </div>
-                <div class="fact-content">
-                  <h4><span class="count">195</span></h4>
-                  <h6>Countries Covered</h6>
-                  <p>
-                    Express delivery is an innaiv service effective logistics
-                    solution
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-sm-6">
-              <div class="single-fact mb-50">
-                <div class="fact-icon mb-25">
-                  <i class="flaticon-user"></i>
-                </div>
-                <div class="fact-content">
-                  <h4><span class="count">456</span> k</h4>
-                  <h6>Happy Customer</h6>
-                  <p>
-                    Express delivery is an innaiv service effective logistics
-                    solution
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-sm-6">
-              <div class="single-fact mb-50">
-                <div class="fact-icon mb-25">
-                  <i class="flaticon-like"></i>
-                </div>
-                <div class="fact-content">
-                  <h4><span class="count">99</span> Yr</h4>
-                  <h6>Year Experience</h6>
-                  <p>
-                    Express delivery is an innaiv service effective logistics
-                    solution
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- fact-area-end -->
-
-      <!-- section-area -->
-      <section class="area-wrapper black-bg position-relative pt-115 pb-120">
-        <div class="area-wrap-bg"></div>
-        <div class="testimonial-map-bg"></div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="testimonial-area">
-                <div class="section-title white-title mb-55">
-                  <h6>Happy Customer Quotes</h6>
-                  <h2>Our Top Reviews</h2>
-                </div>
-                <div class="testimonial-active">
-                  <div class="single-testimonial">
-                    <div class="testimonial-cat mb-30">
-                      <h5>Shipping Cargo</h5>
-                      <div class="testimonial-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                      </div>
-                    </div>
-                    <div class="testimonial-content mb-45">
-                      <p>
-                        “ Express delivery is an innovative service is effective
-                        logistics solution for the delivery of small cargo. This
-                        service is useful companied various effective logistics
-                        scala ”
-                      </p>
-                    </div>
-                    <div class="testimonial-avatar">
-                      <div class="testi-avatar-img">
-                        <img src="img/images/testi_avatar01.png" alt="img" />
-                      </div>
-                      <div class="testi-avatar-info">
-                        <h6>Tonoy Alexander</h6>
-                        <span>Founder Cargo</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="single-testimonial">
-                    <div class="testimonial-cat mb-30">
-                      <h5>Air Freight</h5>
-                      <div class="testimonial-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                      </div>
-                    </div>
-                    <div class="testimonial-content mb-45">
-                      <p>
-                        “ Express delivery is an innovative service is effective
-                        logistics solution for the delivery of small cargo. This
-                        service is useful companied various effective logistics
-                        scala ”
-                      </p>
-                    </div>
-                    <div class="testimonial-avatar">
-                      <div class="testi-avatar-img">
-                        <img src="img/images/testi_avatar02.png" alt="img" />
-                      </div>
-                      <div class="testi-avatar-info">
-                        <h6>Lanu Dexander</h6>
-                        <span>Founder Cargo</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="cta-area cta-pl">
-                <div class="section-title white-title mb-60">
-                  <h6>Clients Trust Us</h6>
-                  <h2>Cargo Request Quote</h2>
-                </div>
-                <div class="cta-from">
-                  <form action="#">
-                    <div class="cta-form-col d-flex justify-content-between">
-                      <select class="custom-select">
-                        <option selected="">Select Service</option>
-                        <option>Air Freight</option>
-                        <option>Shipping Cargo</option>
-                        <option>Rail Cargo</option>
-                        <option>Warehousing</option>
-                      </select>
-                      <input type="text" placeholder="Length cm" />
-                      <input type="text" placeholder="Hight cm" />
-                    </div>
-                    <div class="cta-form-col d-flex justify-content-between">
-                      <select class="custom-select">
-                        <option selected="">From Country</option>
-                        <option value="United States">United States</option>
-                        <option value="United Kingdom">United Kingdom</option>
-                        <option value="Afghanistan">Afghanistan</option>
-                        <option value="Albania">Albania</option>
-                        <option value="Algeria">Algeria</option>
-                        <option value="American Samoa">American Samoa</option>
-                        <option value="Andorra">Andorra</option>
-                        <option value="Angola">Angola</option>
-                        <option value="Anguilla">Anguilla</option>
-                        <option value="Antarctica">Antarctica</option>
-                        <option value="Antigua and Barbuda">
-                          Antigua and Barbuda
-                        </option>
-                        <option value="Argentina">Argentina</option>
-                        <option value="Armenia">Armenia</option>
-                        <option value="Aruba">Aruba</option>
-                        <option value="Australia">Australia</option>
-                        <option value="Austria">Austria</option>
-                        <option value="Azerbaijan">Azerbaijan</option>
-                        <option value="Bahamas">Bahamas</option>
-                        <option value="Bahrain">Bahrain</option>
-                        <option value="Bangladesh">Bangladesh</option>
-                        <option value="Barbados">Barbados</option>
-                        <option value="Belarus">Belarus</option>
-                        <option value="Belgium">Belgium</option>
-                        <option value="Belize">Belize</option>
-                        <option value="Benin">Benin</option>
-                        <option value="Bermuda">Bermuda</option>
-                        <option value="Bhutan">Bhutan</option>
-                        <option value="Bolivia">Bolivia</option>
-                      </select>
-                      <select class="custom-select">
-                        <option selected="">To Country</option>
-                        <option value="Iceland">Iceland</option>
-                        <option value="India">India</option>
-                        <option value="Indonesia">Indonesia</option>
-                        <option value="Iran, Islamic Republic of">
-                          Iran, Islamic Republic of
-                        </option>
-                        <option value="Iraq">Iraq</option>
-                        <option value="Ireland">Ireland</option>
-                        <option value="Israel">Israel</option>
-                        <option value="Italy">Italy</option>
-                        <option value="Jamaica">Jamaica</option>
-                        <option value="Japan">Japan</option>
-                        <option value="Jordan">Jordan</option>
-                        <option value="Kazakhstan">Kazakhstan</option>
-                        <option value="Kenya">Kenya</option>
-                        <option value="Kiribati">Kiribati</option>
-                        <option value="Korea, Republic of">
-                          Korea, Republic of
-                        </option>
-                        <option value="Kuwait">Kuwait</option>
-                        <option value="Kyrgyzstan">Kyrgyzstan</option>
-                        <option value="Latvia">Latvia</option>
-                        <option value="Lebanon">Lebanon</option>
-                        <option value="Lesotho">Lesotho</option>
-                        <option value="Liberia">Liberia</option>
-                      </select>
-                    </div>
-                    <div class="cta-form-col d-flex justify-content-between">
-                      <select class="custom-select">
-                        <option selected="">Weight kg</option>
-                        <option>100Kg</option>
-                        <option>200Kg</option>
-                        <option>300Kg</option>
-                        <option>400Kg</option>
-                        <option>500Kg</option>
-                        <option>600Kg</option>
-                        <option>700Kg</option>
-                      </select>
-                      <input
-                        class="cta-email"
-                        type="email"
-                        placeholder="Email ID"
-                      />
-                    </div>
-                    <h4 class="extra-services">
-                      <i class="fas fa-binoculars"></i>Extra Service
-                    </h4>
-                    <ul>
-                      <li>
-                        <div class="custom-control custom-checkbox">
-                          <input
-                            type="checkbox"
-                            class="custom-control-input"
-                            id="customCheck1"
-                          />
-                          <label class="custom-control-label" for="customCheck1"
-                            >Air Freight</label
-                          >
-                        </div>
-                      </li>
-                      <li>
-                        <div class="custom-control custom-checkbox">
-                          <input
-                            type="checkbox"
-                            class="custom-control-input"
-                            id="customCheck2"
-                          />
-                          <label class="custom-control-label" for="customCheck2"
-                            >Shipping Cargo</label
-                          >
-                        </div>
-                      </li>
-                      <li>
-                        <div class="custom-control custom-checkbox">
-                          <input
-                            type="checkbox"
-                            class="custom-control-input"
-                            id="customCheck3"
-                          />
-                          <label class="custom-control-label" for="customCheck3"
-                            >Rail Cargo</label
-                          >
-                        </div>
-                      </li>
-                      <li>
-                        <div class="custom-control custom-checkbox">
-                          <input
-                            type="checkbox"
-                            class="custom-control-input"
-                            id="customCheck4"
-                          />
-                          <label class="custom-control-label" for="customCheck4"
-                            >Warehousing</label
-                          >
-                        </div>
-                      </li>
-                    </ul>
-                    <button class="btn">comparison</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- section-area-end -->
-
-      <!-- control-area -->
-      <section class="control-area pt-110 pb-120">
+      <div class="support-area support-bg pt-110 pb-120" id="devis">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-xl-7 col-lg-10">
               <div class="s-section-title text-center mb-60">
-                <h2>We give complete control</h2>
-                <p>
-                  Express delivery is an innovative service is effective
-                  logistics solution for the delivery of small cargo. This
-                  service is useful for companies various
-                </p>
+                <h2>Obtenir un devis</h2>
               </div>
             </div>
           </div>
-        </div>
-        <div class="container-fluid control-fluid">
-          <div class="row control-active">
-            <div class="col-xl-4">
-              <div class="single-control-wrap fix">
-                <div class="control-thumb">
-                  <img src="img/images/control_img01.jpg" alt="img" />
-                </div>
-                <div class="control-overlay-content">
-                  <h4><a href="#">Cargo Truck</a></h4>
-                  <span>Delivery Anything</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4">
-              <div class="single-control-wrap fix">
-                <div class="control-thumb">
-                  <img src="img/images/control_img02.jpg" alt="img" />
-                </div>
-                <div class="control-overlay-content">
-                  <h4><a href="#">Cargo shipping</a></h4>
-                  <span>Delivery Anything</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4">
-              <div class="single-control-wrap fix">
-                <div class="control-thumb">
-                  <img src="img/images/control_img03.jpg" alt="img" />
-                </div>
-                <div class="control-overlay-content">
-                  <h4><a href="#">Cargo Truck</a></h4>
-                  <span>Delivery Anything</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4">
-              <div class="single-control-wrap fix">
-                <div class="control-thumb">
-                  <img src="img/images/control_img02.jpg" alt="img" />
-                </div>
-                <div class="control-overlay-content">
-                  <h4><a href="#">Cargo shipping</a></h4>
-                  <span>Delivery Anything</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4">
-              <div class="single-control-wrap fix">
-                <div class="control-thumb">
-                  <img src="img/images/control_img03.jpg" alt="img" />
-                </div>
-                <div class="control-overlay-content">
-                  <h4><a href="#">Cargo Truck</a></h4>
-                  <span>Delivery Anything</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- control-area-end -->
-
-      <!-- brand-area -->
-      <div class="brand-area gray-bg pt-85 pb-85">
-        <div class="container">
-          <div class="row brand-active">
-            <div class="col-12">
-              <div class="signle-brand">
-                <img src="img/brand/brnad_logo01.png" alt="img" />
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="signle-brand">
-                <img src="img/brand/brnad_logo02.png" alt="img" />
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="signle-brand">
-                <img src="img/brand/brnad_logo03.png" alt="img" />
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="signle-brand">
-                <img src="img/brand/brnad_logo04.png" alt="img" />
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="signle-brand">
-                <img src="img/brand/brnad_logo05.png" alt="img" />
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="signle-brand">
-                <img src="img/brand/brnad_logo03.png" alt="img" />
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="support-form text-center">
+                <form action="#">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input type="text" id="nom" placeholder="Nom" required />
+                    </div>
+                    <div class="col-md-6">
+                      <input
+                        type="text"
+                        id="phone"
+                        placeholder="Numéro de téléphone"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-12">
+                      <input
+                        type="text"
+                        id="email"
+                        placeholder="Adresse e-mail"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <textarea
+                    id="message"
+                    placeholder="En quoi pouvons-nous vous aider ?
+                    "
+                  ></textarea>
+                  <button type="button" class="btn red-btn" id="envoyer">
+                    Envoyer
+                  </button>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- delivery-services-end -->
+
+      <!-- fact-area -->
+
+      <!-- brand-area -->
       <!-- brand-area-end -->
 
-      <!-- newsletter -->
-      <section class="newsletter-area gray-bg">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="newsletter-wrap">
-                <div class="row">
-                  <div class="col-lg-5">
-                    <div class="newsletter-content">
-                      <h4>Newsletter Sign Up</h4>
-                      <span>Notifications our best deals...</span>
-                    </div>
-                  </div>
-                  <div class="col-lg-7">
-                    <div class="newsletter-form">
-                      <form action="#">
-                        <input type="email" placeholder="Enter your email..." />
-                        <button class="btn">subscribe</button>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <!-- newsletter-end -->
     </main>
     <!-- main-area-end -->
@@ -1172,12 +414,9 @@
                   /></a>
                 </div>
                 <div class="footer-text">
-                  <p>
-                    Orem Ipsum is simply dumm text the printing and types indstr
-                    sum has been the industry
-                  </p>
+                  <p>Transport routier de merchandises</p>
                 </div>
-                <div class="footer-social">
+                <!-- <div class="footer-social">
                   <ul>
                     <li>
                       <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -1192,40 +431,20 @@
                       <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </li>
                   </ul>
-                </div>
+                </div> -->
               </div>
             </div>
             <div class="col-xl-3 col-lg-4 col-md-6">
               <div class="footer-widget mb-50">
                 <div class="fw-title mb-30">
-                  <h5>RECENT POSTS</h5>
+                  <h5>Adresse</h5>
                 </div>
                 <div class="f-rc-post">
                   <ul>
                     <li>
-                      <div class="f-rc-thumb">
-                        <a href="#"
-                          ><img src="img/blog/f_rc_img01.jpg" alt="img"
-                        /></a>
-                      </div>
+                      <div class="f-rc-thumb">Sera disponible bientôt</div>
                       <div class="f-rc-content">
-                        <span>19 Jun, 2019</span>
-                        <h5>
-                          <a href="#">which the syste built and actually</a>
-                        </h5>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="f-rc-thumb">
-                        <a href="#"
-                          ><img src="img/blog/f_rc_img02.jpg" alt="img"
-                        /></a>
-                      </div>
-                      <div class="f-rc-content">
-                        <span>19 Jun, 2019</span>
-                        <h5>
-                          <a href="#">which the syste built and actually</a>
-                        </h5>
+                        <h5></h5>
                       </div>
                     </li>
                   </ul>
@@ -1235,35 +454,27 @@
             <div class="col-xl-3 col-lg-4 col-md-6">
               <div class="footer-widget mb-50">
                 <div class="fw-title mb-30">
-                  <h5>USEFUL LINKS</h5>
+                  <h5>LIENS UTILES</h5>
                 </div>
                 <div class="fw-link">
                   <ul>
                     <li>
-                      <a href="#"
-                        ><i class="fas fa-caret-right"></i> About us</a
+                      <a href="#"><i class="fas fa-caret-right"></i> Accueil</a>
+                    </li>
+                    <li>
+                      <a href="#aboutus"
+                        ><i class="fas fa-caret-right"></i> À propos de nous</a
                       >
                     </li>
                     <li>
-                      <a href="#"
-                        ><i class="fas fa-caret-right"></i> Delivery
-                        Information</a
+                      <a href="#devis"
+                        ><i class="fas fa-caret-right"></i> Obtenir un devis</a
                       >
                     </li>
                     <li>
-                      <a href="#"
-                        ><i class="fas fa-caret-right"></i> Terms &
-                        Conditions</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fas fa-caret-right"></i> Privacy Policy</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fas fa-caret-right"></i> Refund Policy</a
+                      <a href="tel:+212690902700"
+                        ><i class="fas fa-caret-right"></i> Appeler
+                        maintenant</a
                       >
                     </li>
                   </ul>
@@ -1273,18 +484,14 @@
             <div class="col-xl-3 col-lg-4 col-md-6">
               <div class="footer-widget mb-50">
                 <div class="fw-title mb-30">
-                  <h5>Support & Downloads</h5>
+                  <h5>OBTENIR DE L'AIDE</h5>
                 </div>
                 <div class="f-support-content">
-                  <p>
-                    Lorem ipsum dolor sit amet, consy eetur adipisc de elit.
-                    Quisque act raqum nunc no dolor
-                  </p>
-                  <a href="#" class="f-download-btn"
+                  <p>Contactez-nous avec WhatsApp pour un support instantané</p>
+                  <a
+                    href="https://wa.me/+212690902700?text=salut, je vous contacte depuis votre site web, pouvez-vous fournir plus d'informations ?"
+                    class="f-download-btn"
                     ><img src="img/images/f_download_btn01.png" alt="img"
-                  /></a>
-                  <a href="#" class="f-download-btn"
-                    ><img src="img/images/f_download_btn02.png" alt="img"
                   /></a>
                 </div>
               </div>
@@ -1297,12 +504,7 @@
           <div class="row align-items-center">
             <div class="col-lg-6 col-md-7">
               <div class="copyright-text">
-                <p>Copyright© <span>StarTask </span> | All Rights Reserved</p>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-5">
-              <div class="f-payment-method text-center text-md-right">
-                <img src="img/images/card_img.png" alt="img" />
+                <p>Copyright© <span>Cargoom </span> | Tous droits réservés</p>
               </div>
             </div>
           </div>
